@@ -1,4 +1,4 @@
-🧬 Rick and Morty React App
+# Rick and Morty React App
 
 This is a React-based web application that consumes the Rick and Morty API
  to display information about all characters from the popular animated series "Rick and Morty".
