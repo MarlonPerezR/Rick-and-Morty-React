@@ -8,6 +8,7 @@ The app allows users to browse through the list of characters, view their images
 Watch  video demo or try project 
 
 👉 Live Demo 
+
 👉 Try project 
 
 🚀 Features
