@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-height: 200px; /* Límite máximo para pantallas grandes */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,13 +25,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 50px;
+  box-sizing: border-box;
 }
+
 .title {
-  font-size: 10rem;      
-  font-weight: bold;     
-  margin-bottom: 0px;   /* separación opcional */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* opcional, sombra */
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  line-height: 1.1; /* Mejor espaciado en móviles */
+  word-wrap: break-word; /* Evita desbordamiento */
 }
+
 .App-link {
   color: #61dafb;
 }
@@ -44,7 +51,7 @@
 }
 
 .btns-of-page {
-  background-color: #55e85d; /* azul tipo React */
+  background-color: #55e85d;
   color: #000;
   border: none;
   padding: 25px 35px;
@@ -53,9 +60,186 @@
   cursor: pointer;
   margin: 10px;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .btns-of-page:hover {
-  background-color: #21a1f1; /* un azul más oscuro */
+  background-color: #21a1f1;
   color: white;
+  transform: translateY(-2px); /* Efecto hover mejorado */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ========== MEDIA QUERIES PARA RESPONSIVO ========== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 7rem;
+    margin-bottom: 20px;
+  }
+  
+  .App-header {
+    padding: 40px 30px;
+    min-height: 80vh;
+  }
+  
+  .btns-of-page {
+    padding: 20px 30px;
+    font-size: 18px;
+    margin: 8px;
+  }
+  
+  .App-logo {
+    height: 35vmin;
+  }
+}
+
+/* Tablets pequeñas y móviles grandes (576px - 768px) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  
+  .App-header {
+    padding: 30px 20px;
+    min-height: 70vh;
+    font-size: calc(8px + 2vmin);
+  }
+  
+  .btns-of-page {
+    padding: 18px 25px;
+    font-size: 16px;
+    margin: 6px;
+    width: 90%; /* Botones más anchos en móviles */
+    max-width: 300px;
+  }
+  
+  .App-logo {
+    height: 30vmin;
+    max-height: 150px;
+  }
+}
+
+/* Móviles (375px - 576px) */
+@media (max-width: 576px) {
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+  .App-header {
+    padding: 20px 15px;
+    min-height: 60vh;
+    font-size: calc(6px + 2vmin);
+  }
+  
+  .btns-of-page {
+    padding: 15px 20px;
+    font-size: 14px;
+    margin: 5px;
+    width: 95%;
+    max-width: 280px;
+  }
+  
+  .App-logo {
+    height: 25vmin;
+    max-height: 120px;
+  }
+  
+  .App {
+    padding: 10px;
+  }
+}
+
+/* Móviles muy pequeños (hasta 375px) */
+@media (max-width: 375px) {
+  .title {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .App-header {
+    padding: 15px 10px;
+    min-height: 50vh;
+  }
+  
+  .btns-of-page {
+    padding: 12px 18px;
+    font-size: 13px;
+    margin: 4px;
+  }
+  
+  .App-logo {
+    height: 20vmin;
+    max-height: 100px;
+  }
+}
+
+/* Pantallas muy grandes (más de 1440px) */
+@media (min-width: 1440px) {
+  .title {
+    font-size: 12rem;
+  }
+  
+  .App-header {
+    padding: 60px;
+  }
+  
+  .btns-of-page {
+    padding: 30px 45px;
+    font-size: 22px;
+    margin: 15px;
+  }
+}
+
+/* Orientación landscape en móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+  .App-header {
+    min-height: 120vh; /* Más altura en landscape */
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .App-logo {
+    height: 20vmin;
+  }
+  
+  .btns-of-page {
+    padding: 12px 20px;
+    margin: 5px;
+  }
+}
+
+/* Modo oscuro del sistema */
+@media (prefers-color-scheme: dark) {
+  .btns-of-page {
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+  }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .App-logo {
+    animation: none;
+  }
+  
+  .btns-of-page {
+    transition: none;
+  }
+}
+
+/* Alta densidad de píxeles */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .App-logo {
+    image-rendering: -webkit-optimize-contrast;
+  }
 }
