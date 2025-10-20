@@ -73,7 +73,9 @@ Import the project to Vercel.
 Deploy automatically — no configuration required.
 
 
+# 👥 Developed By
 
-# 🧑‍💻 Author
+Marlon Pérez R.
 
-Developed by Marlon Pérez.
+https://github.com/MarlonPerezR
+https://www.linkedin.com/in/marlonpérez/
