@@ -5,14 +5,14 @@ This is a React-based web application that consumes the Rick and Morty API
 
 The app allows users to browse through the list of characters, view their images, names, species, status, and other details in a visually appealing and responsive interface.
 
-# 📼 Watch  video demo or try project 
+## 📼 Watch  video demo or try project 
 
 👉 Live Demo 
 
 👉 Try project 
 
 
-#🚀 Features
+## 🚀 Features
 
 Fetches data from the public Rick and Morty API.
 
@@ -24,7 +24,7 @@ Responsive design using React Hooks and CSS.
 
 Built entirely with React.js (frontend only).
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 React.js
 
@@ -34,7 +34,7 @@ CSS3 / Tailwind / Styled Components (depending on what you used)
 
 Fetch API / Axios
 
-# 💻 Installation and Setup
+## 💻 Installation and Setup
 
 Clone the repository:
 
@@ -60,7 +60,7 @@ Open in your browser:
 
 http://localhost:3000
 
-# 🌐 Deployment
+## 🌐 Deployment
 
 The project can be deployed easily on Vercel, Netlify, or any React-compatible hosting service.
 
@@ -73,7 +73,7 @@ Import the project to Vercel.
 Deploy automatically — no configuration required.
 
 
-# 👥 Developed By
+##👥 Developed By
 
 Marlon Pérez R.
 
@@ -82,3 +82,8 @@ https://portfolio-mu-fawn-47.vercel.app/
 https://github.com/MarlonPerezR
 
 https://www.linkedin.com/in/marlonpérez/
+
+
+## 📄 License
+
+This project is for personal use. © 2025 Marlon Pérez - All rights reserved.
