@@ -73,7 +73,7 @@ Import the project to Vercel.
 Deploy automatically — no configuration required.
 
 
-##👥 Developed By
+## 👥 Developed By
 
 **Marlon Pérez R.**
 
