@@ -78,7 +78,9 @@ Deploy automatically — no configuration required.
 **Marlon Pérez R.**
 
 🌐 Portfolio: https://portfolio-mu-fawn-47.vercel.app/
+
 💻 GitHub: https://github.com/MarlonPerezR
+
 💼 LinkedIn: https://www.linkedin.com/in/marlonpérez/
 
 ## 📄 License
