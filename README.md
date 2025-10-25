@@ -14,15 +14,15 @@ The app allows users to browse through the list of characters, view their images
 
 ## Features
 
-Fetches data from the public Rick and Morty API.
+-Fetches data from the public Rick and Morty API.
 
-Displays all characters with images and information.
+-Displays all characters with images and information.
 
-Search and filter functionality (if implemented).
+-Search and filter functionality (if implemented).
 
-Responsive design using React Hooks and CSS.
+-Responsive design using React Hooks and CSS.
 
-Built entirely with React.js (frontend only).
+-Built entirely with React.js (frontend only).
 
 ## 🛠️ Technologies Used
 
