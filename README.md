@@ -5,14 +5,14 @@ This is a React-based web application that consumes the Rick and Morty API
 
 The app allows users to browse through the list of characters, view their images, names, species, status, and other details in a visually appealing and responsive interface.
 
-## 📼 Watch  video demo or try project 
+## Watch  video demo or try project 
 
 👉 Live Demo 
 
 👉 Try project 
 
 
-## 🚀 Features
+## Features
 
 Fetches data from the public Rick and Morty API.
 
@@ -75,14 +75,11 @@ Deploy automatically — no configuration required.
 
 ##👥 Developed By
 
-Marlon Pérez R.
+**Marlon Pérez R.**
 
-https://portfolio-mu-fawn-47.vercel.app/
-
-https://github.com/MarlonPerezR
-
-https://www.linkedin.com/in/marlonpérez/
-
+🌐 Portfolio: https://portfolio-mu-fawn-47.vercel.app/
+💻 GitHub: https://github.com/MarlonPerezR
+💼 LinkedIn: https://www.linkedin.com/in/marlonpérez/
 
 ## 📄 License
 
