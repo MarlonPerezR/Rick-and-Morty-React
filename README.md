@@ -26,24 +26,24 @@ The app allows users to browse through the list of characters, view their images
 
 ## 🛠️ Technologies Used
 
-React.js
+-React.js
 
-JavaScript (ES6+)
+-JavaScript (ES6+)
 
-CSS3 / Tailwind / Styled Components (depending on what you used)
+-CSS3 / Tailwind / Styled Components (depending on what you used)
 
-Fetch API / Axios
+-Fetch API / Axios
 
 ## 💻 Installation and Setup
 
 Clone the repository:
 
-git clone https://github.com/tu_usuario/Rick-and-Morty-React.git
+_git clone https://github.com/tu_usuario/Rick-and-Morty-React.git_
 
 
 Navigate into the project folder:
 
-cd Rick-and-Morty-React
+_cd Rick-and-Morty-React_
 
 
 Install dependencies:
