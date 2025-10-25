@@ -48,15 +48,15 @@ cd Rick-and-Morty-React
 
 Install dependencies:
 
-npm install
+_npm install_
 
 
 Run the app locally:
 
-npm start
+_npm start_
 
 
-Open in your browser:
+**Open in your browser:**
 
 http://localhost:3000
 
