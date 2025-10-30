@@ -20,7 +20,6 @@ body {
 
 .btn-search {
   background-color: #1ba94c;
-  color: #ffffff;
   box-shadow: 0 4px 12px rgb(27 169 76 / 50%);
   font-size: 18.005px;
   padding-left: 1.528em;
@@ -32,11 +31,7 @@ body {
   cursor: pointer;
 }
 
-.btn-search:hover {
-  background-color: #ffffff;
-  border: 1px solid #1ba94c;
-  color: #1ba94c;
-}
+
 
 .characters {
   padding: 50px;
@@ -139,9 +134,6 @@ body {
     width: auto;
   }
 
-  .character-container {
-    margin: 10px 0;
-  }
 
   .character-container img {
     width: 150px;

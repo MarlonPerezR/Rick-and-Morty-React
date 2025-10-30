@@ -1,246 +1,384 @@
+/* ========== RESET Y CONFIGURACIÓN GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== ESTILOS GENERALES DE LA APP ========== */
 .App {
   text-align: center;
-  padding: 20px;
   background-color: #282c34;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  max-height: 200px; /* Límite máximo para pantallas grandes */
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 50px;
-  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
 }
 
+/* ========== PÁGINA DE INICIO ========== */
 .title {
-  font-size: 10rem;
+  font-size: 5rem;
   font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  line-height: 1.1; /* Mejor espaciado en móviles */
-  word-wrap: break-word; /* Evita desbordamiento */
+  line-height: 1.1;
+  word-wrap: break-word;
+  color: #00b5cc;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-home {
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 181, 204, 0.3);
 }
 
 .btns-of-page {
-  background-color: #55e85d;
+  background: linear-gradient(45deg, #00b5cc, #00d4ff);
   color: #000;
   border: none;
-  padding: 25px 35px;
-  border-radius: 8px;
-  font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 25px;
+  font-size: 18px;
   cursor: pointer;
-  margin: 10px;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  text-decoration: none;
   font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 181, 204, 0.4);
+  transition: all 0.3s ease;
 }
 
 .btns-of-page:hover {
-  background-color: #21a1f1;
-  color: white;
-  transform: translateY(-2px); /* Efecto hover mejorado */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 181, 204, 0.6);
 }
 
-/* ========== MEDIA QUERIES PARA RESPONSIVO ========== */
+/* ========== PÁGINA DE PERSONAJES ========== */
+.characters-container-centered {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  min-height: 80vh;
+}
 
-/* Tablets (768px - 1024px) */
-@media (max-width: 1024px) {
-  .title {
-    font-size: 7rem;
-    margin-bottom: 20px;
-  }
-  
-  .App-header {
-    padding: 40px 30px;
-    min-height: 80vh;
-  }
-  
-  .btns-of-page {
-    padding: 20px 30px;
-    font-size: 18px;
-    margin: 8px;
-  }
-  
-  .App-logo {
-    height: 35vmin;
+.characters-title {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+}
+
+.centered-btn {
+  margin: 1rem auto;
+  display: block;
+}
+
+/* GRID DE PERSONAJES - MÚLTIPLES FILAS */
+.container-characters-centered {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 20px 0;
+  width: 100%;
+  justify-items: center;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 20px;
+  align-content: start;
+}
+
+/* CARDS DE PERSONAJES */
+.character-container {
+  background: #3c3e44;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+  cursor: pointer;
+}
+
+.character-container:hover {
+  border-color: #00b5cc;
+  box-shadow: 0 12px 35px rgba(0, 181, 204, 0.4);
+}
+
+.character-image-container {
+  margin-bottom: 15px;
+}
+
+.character-container img {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid #00b5cc;
+}
+
+.character-info {
+  text-align: left;
+}
+
+.character-container h3 {
+  color: #00b5cc;
+  margin: 15px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.character-container h6 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.character-container p {
+  margin: 8px 0;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+/* ESTADOS Y COLORES */
+.alive, .dead {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.alive {
+  background-color: #55cc55;
+  box-shadow: 0 0 8px #55cc55;
+}
+
+.dead {
+  background-color: #ff5555;
+  box-shadow: 0 0 8px #ff5555;
+}
+
+.text-grey {
+  color: #9e9e9e;
+}
+
+.episode-count, .species, .gender {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* SCROLL INTERNO PERSONALIZADO */
+.container-characters-centered::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container-characters-centered::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+.container-characters-centered::-webkit-scrollbar-thumb {
+  background: #00b5cc;
+  border-radius: 10px;
+}
+
+.container-characters-centered::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff;
+}
+
+/* ========== MEDIA QUERIES RESPONSIVE ========== */
+
+/* Pantallas extra grandes (4 columnas) */
+@media (min-width: 1600px) {
+  .container-characters-centered {
+    grid-template-columns: repeat(4, 1fr);
+    max-height: 75vh;
   }
 }
 
-/* Tablets pequeñas y móviles grandes (576px - 768px) */
-@media (max-width: 768px) {
-  .title {
-    font-size: 5rem;
-    margin-bottom: 30px;
+/* Pantallas grandes (3 columnas) */
+@media (min-width: 1200px) {
+  .container-characters-centered {
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 65vh;
+  }
+}
+
+/* Tablets grandes (2 columnas) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .container-characters-centered {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 70vh;
   }
   
-  .App-header {
-    padding: 30px 20px;
-    min-height: 70vh;
-    font-size: calc(8px + 2vmin);
-  }
-  
-  .btns-of-page {
-    padding: 18px 25px;
-    font-size: 16px;
-    margin: 6px;
-    width: 90%; /* Botones más anchos en móviles */
+  .character-container {
     max-width: 300px;
   }
   
-  .App-logo {
-    height: 30vmin;
-    max-height: 150px;
-  }
-}
-
-/* Móviles (375px - 576px) */
-@media (max-width: 576px) {
-  .title {
-    font-size: 3.5rem;
-    margin-bottom: 40px;
-    padding: 0 10px;
-  }
-  
-  .App-header {
-    padding: 20px 15px;
-    min-height: 60vh;
-    font-size: calc(6px + 2vmin);
-  }
-  
-  .btns-of-page {
-    padding: 15px 20px;
-    font-size: 14px;
-    margin: 5px;
-    width: 95%;
-    max-width: 280px;
-  }
-  
-  .App-logo {
-    height: 25vmin;
-    max-height: 120px;
-  }
-  
-  .App {
-    padding: 10px;
-  }
-}
-
-/* Móviles muy pequeños (hasta 375px) */
-@media (max-width: 375px) {
-  .title {
-    font-size: 2.8rem;
-    margin-bottom: 30px;
-  }
-  
-  .App-header {
-    padding: 15px 10px;
-    min-height: 50vh;
-  }
-  
-  .btns-of-page {
-    padding: 12px 18px;
-    font-size: 13px;
-    margin: 4px;
-  }
-  
-  .App-logo {
-    height: 20vmin;
-    max-height: 100px;
-  }
-}
-
-/* Pantallas muy grandes (más de 1440px) */
-@media (min-width: 1440px) {
-  .title {
-    font-size: 12rem;
-  }
-  
-  .App-header {
-    padding: 60px;
-  }
-  
-  .btns-of-page {
-    padding: 30px 45px;
-    font-size: 22px;
-    margin: 15px;
-  }
-}
-
-/* Orientación landscape en móviles */
-@media (max-height: 500px) and (orientation: landscape) {
-  .App-header {
-    min-height: 120vh; /* Más altura en landscape */
-    padding: 20px;
+  .character-container img {
+    max-width: 220px;
+    height: 220px;
   }
   
   .title {
     font-size: 4rem;
-    margin-bottom: 20px;
   }
   
-  .App-logo {
-    height: 20vmin;
+  .img-home {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+/* Tablets pequeñas (2 columnas compactas) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .container-characters-centered {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-height: 60vh;
+    padding: 15px;
+  }
+  
+  .character-container {
+    max-width: 280px;
+    padding: 15px;
+  }
+  
+  .character-container img {
+    max-width: 200px;
+    height: 200px;
+  }
+  
+  .character-container h3 {
+    font-size: 1.2rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .App-header {
+    padding: 15px;
+  }
+  
+  .img-home {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .btns-of-page {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Móviles (1 columna) */
+@media (max-width: 575px) {
+  .container-characters-centered {
+    grid-template-columns: 1fr;
+    max-height: 55vh;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .character-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  .character-container img {
+    max-width: 200px;
+    height: 200px;
+  }
+  
+  .characters-title {
+    font-size: 2.2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .img-home {
+    max-width: 180px;
+    max-height: 180px;
   }
   
   .btns-of-page {
     padding: 12px 20px;
-    margin: 5px;
+    font-size: 14px;
   }
 }
 
-/* Modo oscuro del sistema */
-@media (prefers-color-scheme: dark) {
-  .btns-of-page {
-    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
-  }
-}
-
-/* Mejoras de accesibilidad */
-@media (prefers-reduced-motion: reduce) {
-  .App-logo {
-    animation: none;
+/* Móviles muy pequeños */
+@media (max-width: 375px) {
+  .container-characters-centered {
+    max-height: 50vh;
   }
   
-  .btns-of-page {
-    transition: none;
+  .character-container img {
+    max-width: 180px;
+    height: 180px;
+  }
+  
+  .characters-title {
+    font-size: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .img-home {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .home-container {
+    gap: 1.5rem;
   }
 }
 
-/* Alta densidad de píxeles */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .App-logo {
-    image-rendering: -webkit-optimize-contrast;
+/* Pantallas muy altas */
+@media (min-height: 800px) {
+  .container-characters-centered {
+    max-height: 65vh;
   }
 }
