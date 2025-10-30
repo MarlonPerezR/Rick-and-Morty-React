@@ -5,58 +5,58 @@ This is a React-based web application that consumes the Rick and Morty API
 
 The app allows users to browse through the list of characters, view their images, names, species, status, and other details in a visually appealing and responsive interface.
 
-## 📼 Watch  video demo or try project 
+## Watch  video demo or try project 
 
 👉 Live Demo 
 
 👉 Try project 
 
 
-## 🚀 Features
+## Features
 
-Fetches data from the public Rick and Morty API.
+-Fetches data from the public Rick and Morty API.
 
-Displays all characters with images and information.
+-Displays all characters with images and information.
 
-Search and filter functionality (if implemented).
+-Search and filter functionality (if implemented).
 
-Responsive design using React Hooks and CSS.
+-Responsive design using React Hooks and CSS.
 
-Built entirely with React.js (frontend only).
+-Built entirely with React.js (frontend only).
 
 ## 🛠️ Technologies Used
 
-React.js
+-React.js
 
-JavaScript (ES6+)
+-JavaScript (ES6+)
 
-CSS3 / Tailwind / Styled Components (depending on what you used)
+-CSS3 / Tailwind / Styled Components (depending on what you used)
 
-Fetch API / Axios
+-Fetch API / Axios
 
 ## 💻 Installation and Setup
 
 Clone the repository:
 
-git clone https://github.com/tu_usuario/Rick-and-Morty-React.git
+_git clone https://github.com/tu_usuario/Rick-and-Morty-React.git_
 
 
 Navigate into the project folder:
 
-cd Rick-and-Morty-React
+_cd Rick-and-Morty-React_
 
 
 Install dependencies:
 
-npm install
+_npm install_
 
 
 Run the app locally:
 
-npm start
+_npm start_
 
 
-Open in your browser:
+**Open in your browser:**
 
 http://localhost:3000
 
@@ -73,16 +73,15 @@ Import the project to Vercel.
 Deploy automatically — no configuration required.
 
 
-##👥 Developed By
+## 👥 Developed By
 
-Marlon Pérez R.
+**Marlon Pérez R.**
 
-https://portfolio-mu-fawn-47.vercel.app/
+🌐 Portfolio: https://portfolio-mu-fawn-47.vercel.app/
 
-https://github.com/MarlonPerezR
+💻 GitHub: https://github.com/MarlonPerezR
 
-https://www.linkedin.com/in/marlonpérez/
-
+💼 LinkedIn: https://www.linkedin.com/in/marlonpérez/
 
 ## 📄 License
 
